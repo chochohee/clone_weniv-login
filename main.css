@@ -1,0 +1,140 @@
+@font-face {
+    font-family: 'SpoqaHanSansNeo-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SpoqaHanSansNeo-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SpoqaHanSansNeo-middle';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SpoqaHanSansNeo-Regular.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+:root{
+    --main-color:#711bff;
+    --sub-color:#767676;
+}
+
+article{
+    position: relative;
+    top: 30px;
+    left: 25px;
+    display: inline-block;
+    width: 350px;
+    height: 140px;
+    border: solid 1px #dbdbdb;
+    border-radius: 5px;
+}
+
+article .login-title{
+    width: 215px;
+    height: 15px;
+    line-height: 15.02px;
+    font-family: "SpoqaHanSansNeo-Regular";
+    font-size: 12px;
+    margin-top: 19px;
+    margin-left: 16px;
+}
+
+/* 로그인박스 */
+.login-box .login{
+    display: flex;
+    width: 318px;
+    height: 40px;
+    background-color: var(--main-color);
+    margin-left: 16px;
+    margin-top: 16px;
+    border-radius: 4px;
+    padding: 11px 108px;
+}
+
+.login-box .login-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 102px;
+    height: 18px;
+}
+
+.login img{
+    width: 64px;
+    height: 18px;
+}
+
+.login p{
+    font-family: 'SpoqaHanSansNeo-middle';
+    color: white;
+    font-size: 12px;
+    line-height: 15.02px;
+}
+
+
+.helpbtn-group{
+    display: flex;
+}
+
+/* 아이디/비번찾기 */
+
+.help-login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 133px;
+    height: 16px;
+    margin-top: 16px;
+    margin-left: 16px;
+}
+
+.help-login .icon-lock{
+    background-image: url(./src/icon-lock.svg);
+    width: 16px;
+    height: 16px;
+    margin-right: 4px;
+}
+
+.help-login .find-area{
+    display: flex;
+    align-items: center;
+    font-family: 'SpoqaHanSansNeo-Regular';
+    font-size: 12px;
+    line-height: 15.02px;
+    color: var(--sub-color);
+    width: 113px;
+    height: 15px;
+}
+
+.help-login .find-id::after{
+    content: "|";
+    margin: 0 4px;
+}
+
+/* 회원가입 */
+
+.help-signup{
+align-items: center;
+margin-left:120px;
+margin-top: 16px;
+width: 65px;
+height: 16px;
+}
+
+.help-signup a{
+    display: flex;
+    width: 65px;
+    height: 16px;
+}
+
+.help-signup .icon-user{
+    background-image: url(./src/icon-user.svg);
+    width: 16px;
+    height: 16px;
+    margin-right: 4px;
+}
+.help-signup .signup-text{
+    font-family: 'SpoqaHanSansNeo-Regular';
+    color: var(--sub-color);
+    font-size: 12px;
+    line-height: 15.02px;
+}
